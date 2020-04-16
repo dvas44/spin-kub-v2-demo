@@ -56,4 +56,5 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 31212
+    targetPort: 8084
+    nodePort: 31212
