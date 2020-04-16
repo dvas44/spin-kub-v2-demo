@@ -33,11 +33,11 @@ spec:
       - name: primary
         image: dvasquez4/spin-kub-v2-demo:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8000
         readinessProbe:
           httpGet:
             path: /
-            port: 80
+            port: 8000
         envFrom:
         - configMapRef:
             name: spinnaker-demo-config
@@ -50,12 +50,10 @@ metadata:
   name: spinnaker-demo
   namespace: default
 spec:
-  type: NodePort
   selector:
     source: demo
     app: spinnaker
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 80
-    nodePort: 31794
+    targetPort: 8000
