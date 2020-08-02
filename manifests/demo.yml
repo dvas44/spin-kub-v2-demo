@@ -7,7 +7,7 @@ data:
   NEW_FEATURE: "true"
 
 
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spinnaker-demo
@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: primary
-        image: index.docker.io/dvasquez4/spin-kub-v2-demo
+        image: dvasquez4/spin-kub-v2-demo
         ports:
         - containerPort: 8000
         readinessProbe:
