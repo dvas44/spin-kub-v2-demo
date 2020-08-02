@@ -6,9 +6,8 @@ metadata:
 data:
   NEW_FEATURE: "true"
 
------
 
-apiVersion: apps/v1
+apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: spinnaker-demo
