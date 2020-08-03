@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: primary
-        image: "dvasquez4/spin-kub-v2-demo:v1"
+        image: "index.docker.io/dvasquez4/spin-kub-v2-demo:latest"
         ports:
         - containerPort: 8000
         readinessProbe:
