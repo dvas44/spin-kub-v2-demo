@@ -18,6 +18,7 @@ metadata:
     stack: frontend
     app: spinnaker
 spec:
+  progressDeadlineSeconds: 900
   selector:
     matchLabels:
       source: demo
